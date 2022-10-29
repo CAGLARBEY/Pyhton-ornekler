@@ -1,0 +1,44 @@
+import time
+print("Hesap Makinesi Uygulamasına Hoşgeldiniz...")
+print(""""" 
+Toplamı işlemi için 1 e basınız...
+Çıkarma işlemi için 2 ye basınız ...
+Bölme işlemi için 3 e basınız...
+Çarpma işlemi için 4 e basınız ...
+""")
+while True:
+    tercih = input(("Seçiminiz :"))
+    if tercih == "1":
+        sayi1=float(input("Bir sayı giriniz :"))
+        sayi2=float(input("İkinci sayıyı giriniz :"))
+        print("İşleminiz yapılıyor...")
+        time.sleep(1)
+        print("Sayıların toplamı : {}".format(sayi1+sayi2))
+    elif tercih =="2":
+        sayi1 = float(input("Bir sayı giriniz :"))
+        sayi2 = float(input("İkinci sayıyı giriniz :"))
+        if sayi1>sayi2:
+            print("Çıkarma işleminiz yapılıyor...")
+            time.sleep(1)
+            print("Çıkarma işleminizin sonucu : {}".format(sayi1-sayi2))
+        else:
+            print("Çıkarma işleminiz yapılıyor...")
+            time.sleep(1)
+            print("Çıkarma işleminizin sonucu : {}".format(sayi2 - sayi1))
+    elif tercih=="3":
+        sayi1=float(input("Bir sayı giriniz :"))
+        sayi2=float(input("İkinci sayıyı giriniz :"))
+        print("İşleminiz yapılıyor...")
+        time.sleep(1)
+        print("Bölme işleminizin sonucu : {}".format(sayı1/sayı2))
+    elif tercih=="4":
+        sayi1 = float(input("Bir sayı giriniz :"))
+        sayi2 = float(input("İkinci sayıyı giriniz :"))
+        print("İşleminiz yapılıyor...")
+        time.sleep(1)
+        print("Çarpma işleminizin sonucu : {}".format(sayı1 * sayı2))
+    elif tercih=="q":
+        time.sleep(2)
+        print("Çıkış yapılıyor...")
+    else:
+        print("Hatala girdiniz. Lütfen tekrar deneyiniz...")
