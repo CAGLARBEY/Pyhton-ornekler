@@ -1,0 +1,6 @@
+print("Sayı yazdırma algoritmasına hoşgeldiniz..")
+print("Lütfen başlangıç değerini küçük giriniz!")
+sayi=int(input("Başlangıç değerini giriniz. "))
+sayı1=int(input("Bitiş değerini giriniz :"))
+for i in range(sayi,sayı1):
+    print(i)
