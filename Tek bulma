@@ -1,0 +1,4 @@
+liste = [1, 2, 3, 4, 5, 6, 7,8,9,10]
+for eleman in liste:
+    if eleman % 2 != 0:
+        print("Listede bulunan tek sayılar :", eleman)
