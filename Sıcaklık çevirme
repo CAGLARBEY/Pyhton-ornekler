@@ -1,0 +1,66 @@
+import time
+
+print("Sıcaklık Dönüşüm Programına Hoşgeldiniz...")
+print("Çevirmek istediğiniz birimleri aşağıdan seçiniz...")
+print(""" -----------------------------
+Fahrenheiti Dereceye çevirmek için 1:
+-----------------------------
+Dereceyi Fahrenheite çevirmek için 2:
+-----------------------------
+Dereceyi Kelvine çevirmek için 3:
+-----------------------------
+Kelvini Dereceye çevirmek için 4:
+-----------------------------
+Fahrenheiti Kelvine çevirmek için 5:
+-----------------------------
+Kelvini Fahrenheite çevirmek için 6:
+-----------------------------
+Tuşlarından birini seçiniz.
+Çıkmak için q tuşuna basınız.
+-----------------------------
+""")
+seçim = int(input("Bir seçim yapınız..."))
+while True:
+    if seçim == 1:
+        fahrenheit = int(input("Çevrilmesini istediğiniz değeri yazınız: "))
+        derece = (fahrenheit - 32) / 1.8
+        print("Çevrim yapılıyor ....")
+        time.sleep(3)
+        print("Oluşan derece :", derece)
+    elif seçim == 2:
+        derece = int(input("Çevrilmesini istediğiniz değeri yazınız: "))
+        fahrenheit = (derece * 1.8) + 32
+        print("Çevrim yapılıyor...")
+        time.sleep(3)
+        print("Oluşan fahrenheit :", fahrenheit)
+    elif seçim == 3:
+        kelvin = int(input("Çevrilmesini istediğiniz değeri yazınız: "))
+        derece = (kelvin - 273.15)
+        print("Çevrim yapılıyor....")
+        time.sleep(3)
+        print("Oluşan derece :", derece)
+    elif seçim == 4:
+        derece = int(input("Çevrilmesini istediğiniz değeri yazınız: "))
+        kelvin = derece + 273.15
+        print("Çevrim yapılıyor...")
+        time.sleep(3)
+        print("Oluşan kelvin :", kelvin)
+    elif seçim==5:
+        fahrenheit == int(input("Çevrilmesini istediğiniz değeri yazınız: "))
+        kelvin = (fahrenheit * 9 / 5) - 459.67
+        print("Çevrim yapılıyor...")
+        time.sleep(3)
+        print("Oluşan kelvin :", kelvin)
+    elif seçim == 6:
+        kelvin == int(input("Çevrilmesini istediğiniz değeri yazınız: "))
+        fahrenheit = (kelvin + 459.67) * 9 / 5
+        print("Çevrim yapılıyor...")
+        time.sleep(3)
+        print("Oluşan fahrenheit :", fahrenheit)
+    elif seçim == q:
+        print("Sistemden çıkış yapılıyor...")
+        break
+        time.sleep(3)
+        print("Çıkış yapıldı.")
+    else:
+        print("Hatalı bir değer girdiniz!!!")
