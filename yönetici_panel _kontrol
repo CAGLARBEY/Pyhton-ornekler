@@ -1,0 +1,21 @@
+import time
+admin="admin"
+sifre="root"
+print("Admin giriş paneline hoşgeldiniz.")
+print("----------------------------------")
+kullanıcı_adı=input("Kullanıcı adınızı giriniz :")
+print("----------------------------------")
+giris=input("Şifrenizi giriniz :")
+print("----------------------------------")
+while True:
+    if kullanıcı_adı=="admin" and sifre==giris:
+        time.sleep(2)
+        print("Giriş başarılı. Hoşgeldin Admin")
+        break
+    else:
+        print("Hatalı girdiniz. Lütfen tekrar deneyiniz.")
+        çıkış=input("Çıkmak için q ya basınız. ")
+        if çıkış== "q":
+            print("Çıkış yapılıyor...")
+            time.sleep(2)
+            print("Çıkış yapıldı")
