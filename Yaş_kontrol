@@ -1,0 +1,18 @@
+import time
+print("Giriş kontrol uygulamasına hoşgeldiniz...")
+yaş=int(input("Yaşınızı giriniz : "))
+if yaş>=18:
+    print("Sistem yükleniyor...")
+    time.sleep(2)
+    print("İçeri girebilirsiniz.")
+elif yaş<18:
+    print("Sistem yükleniyor...")
+    time.sleep(2)
+    print("Yaşınız giriş için uygun değil!")
+elif yaş==18:
+    print("Sistem yükleniyor...")
+    time.sleep(2)
+    print("Giriş yapmak için yeterli yaşa sahipsiniz. Girebilirsiniz. ")
+else:
+    print("Yanlış giriş yaptınız.Lütfen tekrar deneyiniz.")
+    
