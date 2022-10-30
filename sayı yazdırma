@@ -1,0 +1,6 @@
+print("Girdiğiniz sayıya kadar sayıları yazdıran program")
+
+sayi=int(input("Bir sayı giriniz."))
+
+for i in range (sayi+1):
+    print(i)
