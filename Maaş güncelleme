@@ -1,0 +1,6 @@
+print("Zam ile oluşan yeni maaşı hesaplama programı")
+maas = int(input("Aldığunız maaşı giriniz: "))
+zamorani = int(input("Yapılan zam oranını giriniz :"))
+
+guncelmaas = maas + (maas * zamorani) / 100
+print(guncelmaas)
