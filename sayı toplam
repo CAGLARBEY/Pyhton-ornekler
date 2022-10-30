@@ -1,0 +1,9 @@
+print("Girilen aralıktaki sayıların toplamını bulan programa hoşgeldiniz")
+birinci_sayi=int(input("Başlangıç değerini giriniz :"))
+ikinci_sayi=int(input(("Bitiş değerini giriniz..")))
+
+toplam=0
+
+for i in range(birinci_sayi,ikinci_sayi):
+    toplam+=i
+print(toplam)
