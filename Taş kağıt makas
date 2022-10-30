@@ -1,0 +1,62 @@
+import random
+import time
+
+print( "Taş kağıt makas oyununa hoşgeldiniz. Oyunumuz yapay zekaya karşı oynanmaktadır. Başarılar dileriz...")
+
+kullanıcı_skor, yapay_skor = 0, 0
+
+while True:
+     print("""""
+    Taş ise 1 i seçiniz veya taş yazınız...
+    Kağıt ise 2 yi seçiniz veya kağıt yazınız...
+    Makas ise 3 ü seçiniz veya makas yazınız...
+    
+    """)
+     secim=input("Seçiminizi giriniz :")
+     pc= random.choice(["1", "2", "3"])
+     if (secim=="1" or secim=="taş"):
+        time.sleep(1)
+        if (pc=="1"):
+            print("Aynı şeyi seçtiniz...")
+        elif (pc=="2"):
+            yapay_skor+=10
+            print("Kaybettiniz...")
+        else:
+            print("Kazandınız...")
+            kullanıcı_skor+=10
+     elif (secim=="2" or secim=="kağıt"):
+        time.sleep(1)
+        if (pc == "2"):
+            print("Aynı şeyi seçtiniz...")
+        elif (pc == "3"):
+            yapay_skor += 10
+            print("Kaybettiniz...")
+        else:
+            print("Kazandınız...")
+            kullanıcı_skor += 10
+
+     elif (secim == "3" or secim == "makas"):
+        time.sleep(1)
+
+        if (pc == "2"):
+            print("Aynı şeyi seçtiniz...")
+        elif (pc == "1"):
+            yapay_skor += 10
+            print("Kaybettiniz...")
+        else:
+            print("Kazandınız...")
+        kullanıcı_skor += 10
+     else:
+        print("Hatalı girdiniz.")
+     print("Puan durumu yükleniyor...")
+     time.sleep(1)
+     print("Yapay zeka puanı =", yapay_skor)
+     print("Kullanıcı puanı =",kullanıcı_skor)
+     if (yapay_skor==100):
+         print("Oyunu kaybettiniz. Oyunun kazananı yapay zeka oldu")
+         break
+     elif (kullanıcı_skor==100):
+         print("Tebrikler oyunu kazandınız.")
+         break
+     elif(yapay_skor==100 or kullanıcı_skor==100):
+         print("Oyuna tekrar başlamak istiyorsanız oyunu tekrar başlatın.")
