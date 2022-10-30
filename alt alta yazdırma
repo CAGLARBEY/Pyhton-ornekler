@@ -1,0 +1,4 @@
+yazı=input("Yazılmasını istediğiniz yazıyı giriniz: ")
+
+for x in yazı:
+    print(x)
