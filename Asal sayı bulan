@@ -1,0 +1,11 @@
+print("Asal sayı test programına hoşgeldiniz ...")
+sayi=int(input("Bir sayı giriniz :"))
+bölen_sayı=0
+for i in range (2,sayi):
+    if sayi%i==0:
+        bölen_sayı=bölen_sayı+1
+if bölen_sayı==0:
+    print("Girmiş olduğunuz sayı asaldır.")
+else:
+    print("Girmiş olduğunuz sayı asal değildir.")
+    
