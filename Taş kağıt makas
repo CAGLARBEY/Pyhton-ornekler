@@ -38,14 +38,14 @@ while True:
      elif (secim == "3" or secim == "makas"):
         time.sleep(1)
 
-        if (pc == "2"):
+        if (pc == "3"):
             print("Aynı şeyi seçtiniz...")
         elif (pc == "1"):
             yapay_skor += 10
             print("Kaybettiniz...")
         else:
             print("Kazandınız...")
-        kullanıcı_skor += 10
+            kullanıcı_skor += 10
      else:
         print("Hatalı girdiniz.")
      print("Puan durumu yükleniyor...")
