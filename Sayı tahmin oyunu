@@ -1,0 +1,12 @@
+import random
+print("Sayı tahmin oyununa hoşgeldiniz.")
+sayi=random.randint(0,100)
+tahmin=int(input("Bir tahmin giriniz :"))
+while sayi!=tahmin:
+    if sayi <tahmin:
+        print("Tahmin ettiğiniz sayı yukarıdadır.")
+
+    else:
+        print("Tahmin ettiğiniz sayı aşağıdadır.")
+    sayi=int(input("Tekrar tahmin ediniz :"))
+print("Tebrikler oyunu kazandınız. ")
