@@ -1,0 +1,14 @@
+#Listedeki sayıları kullanıcının belirlediği oranda olanları alıp başka bir liste oluşturan program yazıyoruz. 
+print("Listeden istediğimiz oranda olan sayıları alıp başka bir liste oluşturan program")
+print("---------------------------------------------")
+liste=[21,41,61,72,37,865,96,24,242,626,623,64,89,67,765,535]
+yeniliste=[]
+oran=int(input("Hangi sayının katları olan sayıları listememizi istersiniz: "))
+for i in liste:
+    if i%oran==0:
+        yeniliste.append(i)
+print("---------------------------------------")
+if len(yeniliste)==0:
+    print("İstediğiniz kriterlerde liste oluşturulamadı.")
+else:
+    print(yeniliste)
