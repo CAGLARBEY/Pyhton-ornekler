@@ -1,0 +1,11 @@
+#Vize ve final notlarını kullanarak ortalama hesaplayan ve 50 üzerinde geçip geçmediğini söyleyen program.
+print("Vize ve final not ortalamasını hesaplayan programa hoşgeldiniz.")
+vize=int(input(" Vize notunu giriniz : "))
+print("-----------------------------------")
+final=int(input("Final notunu giriniz : "))
+ortalama=(vize*0.4)+(0.6*final)
+print("--------------------------------")
+if ortalama<50:
+    print("Üzgünüm dersten kaldınız.")
+else:
+    print("Tebrikler dersi geçtiniz. ")
