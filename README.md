@@ -1,2 +1,2 @@
 # Python_Ornekler
-Pythonda temel seviye yazmış olduğum örnekleri sizinle paylaşıyorum. Türkçe olarak bu örnekler paylaşılacak.Çoğunda açıklamalar da olacaktır.
+Pythonda temel seviye yazmış olduğum örnekleri sizinle paylaşıyorum.Burada amaç tamamen öğrenmek ve gelişmek...
