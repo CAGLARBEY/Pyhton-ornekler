@@ -1,0 +1,8 @@
+import random
+
+print("Bir zarın 100 kez atılması ile gelen değerlerin kaç kez yazdığını gösteren programa hoşgeldiniz.")
+oranlar={1:0 ,2:0,3:0,4:0,5:0,6:0}
+for i in range(100):
+    zar=random.randint(1,6)
+    oranlar[zar]+=1
+print(oranlar)
