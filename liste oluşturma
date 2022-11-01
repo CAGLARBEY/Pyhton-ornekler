@@ -1,0 +1,17 @@
+#kullanıcıya veri girdirterek liste oluşturma programı yaptık.
+import time
+print("Liste oluşturmaya hoşgeldiniz. ")
+liste=[]
+while True:
+    tercih=input("Listeye ekleme yapmak istiyor musunuz ? Evet ise e hayır ise h tuşuna basınız... ")
+    if tercih=="e":
+        eleman=str(input("Eklemek istediğiniz elemanın ismini giriniz :"))
+        liste.append(eleman)
+        print(liste)
+    elif tercih=="h":
+        print("Çıkış yapılıyor ...")
+        time.sleep(2)
+        print("Çıkış yapıldı.")
+    else:
+        print("Hatalı giriş yaptınız...")
+print(liste)
