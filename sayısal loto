@@ -1,0 +1,11 @@
+#sayısal loto oyunu 
+import random
+import time
+print("Sayısal loto oynumuza hoşgeldiniz.")
+print("----------------------------")
+print("Numaralar yükleniyor.")
+time.sleep(2)
+sayılar=range(1,100)
+talihli_bilet=random.sample(sayılar,10)
+print(talihli_bilet)
+print("Numaralar yüklendi.")
