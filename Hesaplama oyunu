@@ -1,0 +1,90 @@
+print("Python da oyun projesine hoşgeldiniz.")
+import time
+import random
+işlem_türü=(int(input("İşlem türünü seçiniz : ")))
+a=int(input("Başlangıç değerini giriniz :  "))
+b=int(input("Bitiş değerini giriniz :  "))
+def çarpma():
+    sayı1 = random.randrange(a, b)
+    sayı2 = random.randrange(a, b)
+    c=sayı1*sayı2
+    print("Sorunuz yükleniyor...")
+    time.sleep(0.4)
+    print(f"Sorunuz : {sayı1} * {sayı2} = ?")
+    cevap=int(input("Bir değer giriniz :"))
+    if cevap == c:
+        print("Tebrikler doğru cevabı girdiniz...")
+    else:
+        print("Hatalı veya yanlış girdiniz.")
+def toplama():
+    sayı1 = random.randrange(a, b)
+    sayı2 = random.randrange(a, b)
+    c = sayı1 + sayı2
+    print("Sorunuz yükleniyor...")
+    time.sleep(0.4)
+    print(f"Sorunuz : {sayı1} + {sayı2} = ?")
+    cevap = int(input("Bir değer giriniz :"))
+    if cevap == c:
+        print("Tebrikler doğru cevabı girdiniz...")
+    else:
+        print("Hatalı veya yanlış girdiniz.")
+def çıkarma():
+    sayı1 = random.randrange(a, b)
+    sayı2 = random.randrange(a, b)
+    c = sayı1 - sayı2
+    print("Sorunuz yükleniyor...")
+    time.sleep(0.4)
+    print(f"Sorunuz : {sayı1} - {sayı2} = ?")
+    cevap = int(input("Bir değer giriniz :"))
+    if cevap == c:
+        print("Tebrikler doğru cevabı girdiniz...")
+    else:
+        print("Hatalı veya yanlış girdiniz.")
+def bölme():
+    sayı1 = random.randrange(a, b)
+    sayı2 = random.randrange(a, b)
+    c = sayı1 / sayı2
+    print("Sorunuz yükleniyor...")
+    time.sleep(0.4)
+    print(f"Sorunuz : {sayı1} / {sayı2} = ?")
+    cevap = int(input("Bir değer giriniz :"))
+    if cevap == c:
+        print("Tebrikler doğru cevabı girdiniz...")
+    else:
+        print("Hatalı veya yanlış girdiniz.")
+while True:
+    if işlem_türü==1:
+        çarpma()
+        devam=input("Devam etmek istiyor musunuz ? ")
+        if devam=="e":
+            continue
+        else:
+            print("Programdan çıkış yapılıyor...")
+            break
+    elif işlem_türü == 2:
+        toplama()
+        devam = input("Devam etmek istiyor musunuz ? ")
+        if devam == "e":
+            continue
+        else:
+            print("Programdan çıkış yapılıyor...")
+            break
+    elif  işlem_türü == 3:
+        çıkarma()
+        devam = input("Devam etmek istiyor musunuz ? ")
+        if devam == "e":
+            continue
+        else:
+            print("Programdan çıkış yapılıyor...")
+            break
+    elif  işlem_türü == 4:
+        bölme()
+        devam = input("Devam etmek istiyor musunuz ? ")
+        if devam == "e":
+            continue
+        else:
+            print("Programdan çıkış yapılıyor...")
+            break
+    else:
+        print("Hatalı girdiniz.")
+        break
