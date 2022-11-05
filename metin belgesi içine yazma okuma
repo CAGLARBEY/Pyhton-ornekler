@@ -1,0 +1,10 @@
+#dosya içerisine yazı yazma
+deneme=open("deneme.txt","a")
+deneme.write("İlk deneme metni")
+deneme.close()
+
+#dosya içerisinden yazı okuma
+deneme=open("deneme.txt","r")
+içerik=deneme.read()
+print(içerik)
+deneme.close()
