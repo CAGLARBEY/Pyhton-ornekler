@@ -1,0 +1,5 @@
+#ad ve soyadı alt alta yazan program
+ad=input("adınızı giriniz : ")
+soyad=input("soyadınızı giriniz : ")
+for i in ad+soyad:
+    print(i)
