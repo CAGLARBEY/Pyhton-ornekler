@@ -1,0 +1,25 @@
+print("Girilen sayıları negatif veya pozitif diye ayıran programa hoşgeldiniz...")
+sayaç=0
+negatif_sayılar=[]
+pozitif_sayılar=[]
+sıfır=0
+while sayaç<5:
+    sayı=int(input("Bir sayı giriniz : "))
+    if sayı<0 :
+        print("Girdiğiniz sayı sıfırdan küçüktür. Bu yüzden negatif kümesine ekleniyor.")
+        negatif_sayılar.append(sayı)
+        sayaç+=1
+    elif sayı>0:
+        print("Girdiğiniz sayı sıfırdan büyüktür. Bu yüzden pozitif sayılar kümesine ekleniyor.")
+        pozitif_sayılar.append(sayı)
+        sayaç+=1
+    elif sayı==0:
+        print("Girdiğiniz sayı sıfırdır.")
+        sıfır=sıfır+1
+        sayaç+=1
+    else:
+        print("Hatalı girdiniz...")
+
+print(f"Girilen pozitif sayılar listesi {pozitif_sayılar}"
+      f" Girilen negatif sayılar listesi {negatif_sayılar}"
+      f" {sıfır} kere sıfır girdiniz.")
