@@ -1,0 +1,20 @@
+import turtle
+
+# pencereyi oluştur
+wn = turtle.Screen()
+
+# çizim kalemini oluştur
+pen = turtle.Turtle()
+
+# dikdörtgeni çiz
+pen.forward(100)
+pen.right(90)
+pen.forward(50)
+pen.right(90)
+pen.forward(100)
+pen.right(90)
+pen.forward(50)
+pen.right(90)
+
+# pencereyi kapat
+wn.mainloop()
