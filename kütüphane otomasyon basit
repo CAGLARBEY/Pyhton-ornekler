@@ -1,0 +1,55 @@
+#kütüphane otomasyonu yazıyoruz.
+import time
+print("""
+[1] Kitap ara
+[2] Kitap listele
+[3] Kitap ekle
+[4] Kitap çıkart
+[5] Kitap sayılarını göster
+[6] Çıkış
+""")
+kitapListesi=[]
+def kitapAra(aranacak):
+    if aranacak in kitapListesi:
+        print("Bu kitap kütüphanemizde bulunmaktadır.")
+    else: print("Böyle bir kitap kütüphanemizde bulunmamaktadır.")
+
+def kitapListele():
+    for i in kitapListesi:
+        print(i)
+
+def kitapEkle(eklenecekKitap):
+    if eklenecekKitap in kitapListesi:
+        print("Bu kitaptan kütüphanemizde vardır.")
+    else:
+        kitapListesi.append(eklenecekKitap)
+        time.sleep(2)
+        print("Kitap eklenmiştir.")
+
+def kitapÇıkar(cıkacakKitap):
+    if cıkacakKitap in kitapListesi:
+        kitapListesi.remove(cıkacakKitap)
+    else:print("Bu adda kütüphanemizde kitap yoktur.")
+
+def kitapSayıları():
+    print(len(kitapListesi))
+while True:
+    tercih=input("Tercihiniz nedir ? ")
+    if tercih=="1":
+        aranacakKitap=input("Hangi kitabı aramak istiyorsunuz ?")
+        kitapAra(aranacakKitap)
+    elif tercih=="2":
+        kitapListele()
+    elif tercih=="3":
+        eklenecekKitap=input("Hangi kitabı eklemek istiyorsunuz ? ")
+        kitapEkle(eklenecekKitap)
+    elif tercih=="4":
+        cıkacakKitap=input("Hangi kitabı çıkarmak istiyorsunuz ?")
+        kitapÇıkar(cıkacakKitap)
+    elif tercih=="5":
+        kitapSayıları()
+    elif tercih=="6":
+        print("Çıkış yapılıyor")
+        break
+    else:
+        print("Hatalı tuşladınız.")
