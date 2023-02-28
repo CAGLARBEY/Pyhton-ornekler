@@ -1,0 +1,36 @@
+# boş bir set oluşturma
+empty_set = set()
+
+# elemanlarla set oluşturma
+numbers = {1, 2, 3, 4, 5}
+fruits = set(["apple", "banana", "cherry"])
+
+# set elemanlarını ekrana yazdırma
+print(numbers)
+print(fruits)
+
+# set elemanlarını for döngüsü kullanarak ekrana yazdırma
+for fruit in fruits:
+    print(fruit)
+
+# set elemanlarına yeni elemanlar ekleme
+fruits.add("orange")
+print(fruits)
+
+# set elemanlarından eleman çıkarma
+fruits.remove("banana")
+print(fruits)
+
+# iki set'in kesişimini bulma
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+intersect = set1.intersection(set2)
+print(intersect)
+
+# iki set'in birleşimini bulma
+union = set1.union(set2)
+print(union)
+
+# bir set'teki elemanları başka bir set'e kopyalama
+new_fruits = fruits.copy()
+print(new_fruits)
