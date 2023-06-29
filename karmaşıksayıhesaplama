@@ -1,0 +1,20 @@
+import cmath
+
+deger = input("Lütfen sayıyı giriniz: ")
+
+try:
+    # Karmaşık sayıya dönüştürün
+    sayi = complex(deger)
+
+    # Faz değerini hesaplayın
+    faz_degeri = cmath.phase(sayi)
+
+    # Mutlak değeri hesaplayın
+    mutlak_deger = abs(sayi)
+
+    # Sonuçları yazdırın
+    print("Faz Değeri:", faz_degeri)
+    print("Mutlak Değer:", mutlak_deger)
+
+except ValueError:
+    print("Geçersiz karmaşık sayı girişi!")
